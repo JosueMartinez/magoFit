@@ -464,7 +464,7 @@ Header section
 
 .main-menu li a.active,
 .main-menu li a:hover {
-	background: #fcff18;
+	background:lightslategray;
 }
 
 .header-right {
@@ -475,7 +475,7 @@ Header section
 .header-right .hr-box {
 	width: 294px;
 	padding: 31px 52px;
-	background: #fcff18;
+	background: lightslategray;
 }
 
 .header-right .hr-box img {

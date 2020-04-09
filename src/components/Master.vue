@@ -1,12 +1,19 @@
 <template>
     <div>
-        <h1>this is a test</h1>
+        <!-- Header section -->	
+        <Header />
+        <!-- Header section end -->
     </div>
 </template>
 
 <script>
+import Header from './Header'
+
 export default {
-    name: 'master'
+    name: 'master',
+    components: {
+        Header
+    }
 }
 </script>
 
