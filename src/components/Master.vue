@@ -3,16 +3,23 @@
         <!-- Header section -->	
         <Header />
         <!-- Header section end -->
+
+
+        <!-- Footer section -->	
+        <Footer />
+        <!-- Footer section end -->
     </div>
 </template>
 
 <script>
 import Header from './Header'
+import Footer from './Footer'
 
 export default {
     name: 'master',
     components: {
-        Header
+        Header,
+        Footer
     }
 }
 </script>
