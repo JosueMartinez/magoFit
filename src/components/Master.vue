@@ -4,7 +4,10 @@
         <Header />
         <!-- Header section end -->
 
-
+        <!-- Page View -->
+        <router-view></router-view>
+        <!-- Page View end -->
+        
         <!-- Footer section -->	
         <Footer />
         <!-- Footer section end -->

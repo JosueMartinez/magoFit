@@ -463,6 +463,7 @@ Header section
 }
 
 .main-menu li a.active,
+.main-menu li a.router-link-active,
 .main-menu li a:hover {
 	background:lightslategray;
 }

@@ -5,11 +5,9 @@
 			<img src="img/logo.png" alt="">
 		</a>
 		<ul class="main-menu">
-			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="classes.html">Classes</a></li>
-			<li><a href="blog.html">News</a></li>
-			<li><a href="contact.html">Contact</a></li>
+			<li v-for="(item, index) in linkEntries" :key="index">
+				<router-link :to="item.routeTo" exact>{{ item.name }}</router-link>
+			</li>
 			<li class="header-right">
 				<div class="hr-box">
 					<img src="img/location-icon.png" alt="">
@@ -24,7 +22,16 @@
 
 <script>
 export default {
-    name: 'Header'
+	name: 'Header',
+	data() {
+		return {
+			linkEntries: [
+				{name: 'home', routeTo: '/'},
+				{name: 'about', routeTo: '/about'},
+				{name: 'services', routeTo: '/services'}
+			]
+		}
+	},
 }
 </script>
 
