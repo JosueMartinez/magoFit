@@ -1,27 +1,49 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Master />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// <!--====== Javascripts & Jquery ======-->
+	import '../node_modules/jquery/src/jquery';
+	import './assets/js/bootstrap.min.js';
+	import './assets/js/jquery.slicknav.js';
+	import './assets/js/owl.carousel.min.js';
+	import './assets/js/circle-progress.min.js';
+  import './assets/js/main.js';
+  
+import Master from './components/Master.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Master
   }
 }
 </script>
 
 <style>
+
+/* <!-- Google font --> */
+	@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap';
+
+	/* <!-- Stylesheets --> */
+	@import './assets/css/bootstrap.min.css';
+	@import './assets/css/font-awesome.min.css';
+	/* @import './assets/css/owl.carousel.min.css'; */
+	@import './assets/css/flaticon.css';
+	@import './assets/css/slicknav.min.css';
+
+	/* <!-- Main Stylesheets --> */
+	@import './assets/css/style.css';
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
