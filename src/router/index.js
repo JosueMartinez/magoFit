@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import store from '../store/index'
 
 Vue.use(Router);
 
@@ -16,7 +17,14 @@ const Routes = [
             {
                 path: '/home', 
                 name: 'Home', 
-                component: () => import ("@/components/Home")
+                component: () => import ("@/components/Home"),
+                beforeEnter: (to, from, next) => {
+                    console.log(to.query.baseball)
+                    let whereTo = to.query.baseball ? 'isBaseball' : 'isFitness';
+                    console.log(whereTo)
+                    store.commit(whereTo);
+                    next();
+                }
             },
             { 
                 path: '/about', 

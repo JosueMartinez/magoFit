@@ -5,8 +5,8 @@
                 <div class="hero-text">
                     <h2>Practice with Purpose</h2>
                     <h2><span>Play with Passion!</span></h2>
-                    <router-link class="site-btn" to='/home' exact>Baseball</router-link>
-                    <router-link class="site-btn" to='/home' exact>Fitness</router-link>
+                    <router-link class="site-btn" to='/home?baseball=true' exact>Baseball</router-link>
+                    <router-link class="site-btn" to='/home?fitness=true' exact>Fitness</router-link>
                 </div>
             </div>
         </section>
