@@ -26,7 +26,7 @@ export default {
 	data() {
 		return {
 			linkEntries: [
-				{name: 'home', routeTo: '/'},
+				{name: 'home', routeTo: '/home'},
 				{name: 'about', routeTo: '/about'},
 				{name: 'services', routeTo: '/services'}
 			]
