@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Master />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,12 +13,10 @@
 	import './assets/js/circle-progress.min.js';
   import './assets/js/main.js';
   
-import Master from './components/Master.vue'
 
 export default {
   name: 'App',
   components: {
-    Master
   }
 }
 </script>
