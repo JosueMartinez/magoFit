@@ -16,6 +16,7 @@ body {
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	background-color: gray;
 }
 
 h1,
@@ -163,15 +164,17 @@ Commom elements
 	font-weight: 700;
 	min-width: 228px;
 	padding: 20px 40px;
-	background: #fcff18;
-	color: #353535;
+	background: black;
+	color: white;
 	line-height: normal;
 	cursor: pointer;
 	text-align: center;
+	margin: 10px;
 }
 
 .site-btn:hover {
 	color: #353535;
+	background: white;
 }
 
 .site-btn.sb-dark {
@@ -521,7 +524,7 @@ Hero section
 }
 
 .hero-text h2 span {
-	color: #fcff18;
+	color: black;
 }
 
 .hero-text .site-btn {
