@@ -433,7 +433,8 @@ Commom elements
 }
 
 .icon-box-item:hover .ib-icon {
-	background: #fcff18;
+	background: black;
+	color: white
 }
 
 /*------------------
@@ -903,7 +904,7 @@ Classes Page
  ---------------------*/
 
 .service-section {
-	padding: 122px 0 55px;
+	/* padding: 20px 0 55px; */
 }
 
 .service-section .icon-box-item {

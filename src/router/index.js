@@ -19,7 +19,8 @@ const Routes = [
                 name: 'Home', 
                 component: () => import ("@/components/Home"),
                 beforeEnter: (to, from, next) => {
-                    let whereTo = to.query.baseball ? 'isBaseball' : 'isFitness';
+                                      
+                    let whereTo = store.state.baseball ? 'isBaseball' : to.query.baseball ? 'isBaseball' : 'isFitness';
                     store.commit(whereTo);
                     next();
                 }

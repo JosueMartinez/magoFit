@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
-      baseball: false
+      baseball: true
     },
     mutations: {
         isBaseball(state){

@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="about-img">
-                            <img src="@/assets/img/1.jpg" alt="">
+                            <img src="@/assets/img/bb-home.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -55,15 +55,35 @@
                         </div>
                     </div>
                 </div>
-                <div v-for="(items,index) in groupedBaseballProgram" class="row" :key="index">
+
+                <!-- Baseball Program -->
+                <div  v-if="baseballData">
+                    <div v-for="(items,index) in groupedBaseballProgram" class="row" :key="index">
                         <div v-for="(item,index) in baseballProgram" class="col-lg-4 icon-box-item" :key="index">
                             <div class="ib-icon">
-                                <i class="flaticon-050-weightlifting"></i>
+                                <font-awesome-icon :icon="['fas', 'baseball-ball']" size="1x" />
                             </div>
                             <h4>{{ item.Title }}</h4>
                             <p>{{item.Description}}</p>
                         </div>
                     </div>
+                </div>
+                <!-- Baseball Program END -->
+
+                <!-- Fitness Program -->
+                <div v-if="!baseballData">
+                    <div v-for="(items,index) in groupedFitnessProgram" class="row" :key="index">
+                        <div v-for="(item,index) in fitnessProgram" class="col-lg-4 icon-box-item" :key="index">
+                            <div class="ib-icon">
+                                <font-awesome-icon :icon="['fas', 'dumbbell']" size="1x" />
+                            </div>
+                            <h4>{{ item.Title }}</h4>
+                            <p>{{item.Description}}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fitness Program END -->
+                
             </div>
         </section>
 
@@ -80,28 +100,30 @@ export default {
         SectionHeader
     },
     data() {
+        let isBaseball = this.$store.state.baseball; 
         return {
-            isBaseball: true,
-            headerImage: this.isBaseball ? '1.jpg' : '1.jpg',
-            headerText: this.isBaseball ? "Practice with Purpose.  Play With Passion." : "Practice with Purpose.  Play With Passion.",
+            baseballData: isBaseball,
+            headerImage: isBaseball ? 'bb-home-top.jpg' : '1.jpg',
+            headerText: isBaseball ? "Practice with Purpose.  Play With Passion." : "Don’t be afraid of being a beginner",
             baseballProgram: [
-                {Title: "Minor Athletics Classes", Description: "test" },
-                {Title: "Youth Baseball Classes", Description: "test" },
-                {Title: "Private Lessons", Description: "test" },
-                {Title: "Team Practices", Description: "test" },
-                {Title: "Baseball Camps", Description: "test" },
-                {Title: "Clinics", Description: "test" },
-                {Title: "Team Tryouts", Description: "test" },
-            ]
+                {Title: "Minor Athletics Classes", Description: "specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
+                {Title: "Youth Baseball Classes", Description: "s designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
+                {Title: "Private Lessons", Description: "This program offers each player the extra work needed to improve their game specifically. Private baseball lessons for hitting, defense, pitching, speed and agility’s are available." },
+                {Title: "Team Practices", Description: "Are you looking to improve your team before any type of tournament and/or game? Our professional baseball coach Francisco Rosario can help you with a more intense practice designed to your needs." },
+                {Title: "Baseball Camps", Description: "A camp where athletes aged 5 & up are trained in different aspects of the baseball sport. This camp will offer numerous benefits for baseball players." },
+                {Title: "Clinics", Description: "Kids participating In Sports Clinics are geared towards the child who has a particular interest in learning how to play the game, the right way, while having fun." },
+            ],
+            fitnessProgram: [{Title: "test", Description: "test desc"}]
         }
-    },
-    mounted() {
-        this.isBaseball = this.$store.state.baseball;
     },
     computed: {
         groupedBaseballProgram(){
             return this.chunk(this.baseballProgram,3);
+        },
+        groupedFitnessProgram(){
+            return this.chunk(this.fitnessProgram,3);
         }
+
     },
     methods: {
         chunk (arr, len) {
