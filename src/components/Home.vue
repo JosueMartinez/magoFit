@@ -4,8 +4,8 @@
         <SectionHeader :text="headerText" :image="headerImage" />
         <!-- Section Header End -->
 
-        <!-- About section -->
-        <section class="about-section">
+        <!-- About section baseball -->
+        <section v-if="baseballData" class="about-section">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-lg-5">
@@ -43,10 +43,10 @@
                 </div>
             </div>
         </section>
-        <!-- About section end -->
+        <!-- About section baseball end -->
 
         <!-- Service section -->
-        <section class="service-section">
+        <section v-if="baseballData" class="service-section">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-lg-4 col-sm-6">
@@ -118,6 +118,7 @@ export default {
     },
     computed: {
         groupedBaseballProgram(){
+            alert(this.baseballData);
             return this.chunk(this.baseballProgram,3);
         },
         groupedFitnessProgram(){

@@ -7,9 +7,6 @@
 <script>
 export default {
     name: 'Services',
-    mounted() {
-        this.$store.commit('isBaseball');
-    },
 }
 </script>
 
