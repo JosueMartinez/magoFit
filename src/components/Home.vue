@@ -1,11 +1,13 @@
 <template>
-    <div class="container">
+    <div>
         <!-- Section Header -->
-        <SectionHeader :text="headerText" :image="headerImage" />
+        <SectionHeader v-if="baseballData" :text="headerText" :image="headerImage" />
+        <BigSectionHeader v-if="!baseballData" :text="headerText" :image="headerImage" />        
         <!-- Section Header End -->
 
-        <!-- About section baseball -->
-        <section v-if="baseballData" class="about-section">
+        <!-- About section -->
+        <!-- Baseball -->
+        <section v-if="baseballData" class="about-section-baseball">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-lg-5">
@@ -43,7 +45,8 @@
                 </div>
             </div>
         </section>
-        <!-- About section baseball end -->
+        <!-- Baseball End -->
+        <!-- About section end -->
 
         <!-- Service section -->
         <section v-if="baseballData" class="service-section">
@@ -93,11 +96,13 @@
 <script>
 
 import SectionHeader from './Utils/TopSectionHeader'
+import BigSectionHeader from './Utils/BigSectionHeader'
 
 export default {
     name: 'Home',
     components: {
-        SectionHeader
+        SectionHeader,
+        BigSectionHeader
     },
     data() {
         let isBaseball = this.$store.state.baseball; 
