@@ -24,4 +24,8 @@ export default {
     h2{
         color: white
     }
+
+    .hero-text{
+        background: black;
+    }
 </style>

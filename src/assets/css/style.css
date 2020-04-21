@@ -518,7 +518,7 @@ Hero section
 }
 
 .hero-text {
-	padding-top: 100px;
+	/* padding-top: 100px; */
 }
 
 .hero-text h2 {
@@ -564,7 +564,7 @@ Add section
 }
 
 .add-text h2 span {
-	color: #fcff18;
+	color: white;
 }
 
 .add-text ul {
@@ -690,6 +690,20 @@ BMI section
 	padding-top: 9px;
 }
 
+.blackbg .site-btn{
+	background: white;
+	color: black;
+}
+
+.blackbg .site-btn:hover{
+	background: gray;
+	color: black;
+}
+
+.blackbg h2 span{
+	background: gray;
+	color: black;
+}
 /* ----------------
 Newsletter section
  ---------------------*/
