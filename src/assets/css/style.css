@@ -16,7 +16,6 @@ body {
 	font-family: "PT Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	background-color: gray;
 }
 
 h1,
@@ -98,9 +97,10 @@ Helper CSS
 }
 
 .section-title h2 span {
-	background: #fcff18;
+	background: black;
 	display: inline-block;
 	padding: 0 4px;
+	color: white;
 }
 
 .section-title p {
@@ -433,7 +433,8 @@ Commom elements
 }
 
 .icon-box-item:hover .ib-icon {
-	background: #fcff18;
+	background: black;
+	color: white
 }
 
 /*------------------
@@ -468,7 +469,8 @@ Header section
 .main-menu li a.active,
 .main-menu li a.router-link-active,
 .main-menu li a:hover {
-	background:lightslategray;
+	background:black;
+	color: white;
 }
 
 .header-right {
@@ -479,7 +481,8 @@ Header section
 .header-right .hr-box {
 	width: 294px;
 	padding: 31px 52px;
-	background: lightslategray;
+	background: black;
+	color: white;
 }
 
 .header-right .hr-box img {
@@ -489,6 +492,7 @@ Header section
 
 .header-right .hr-box h6 {
 	overflow: hidden;
+	color: white;
 }
 
 .slicknav_menu {
@@ -514,12 +518,12 @@ Hero section
 }
 
 .hero-text {
-	padding-top: 100px;
+	/* padding-top: 100px; */
 }
 
 .hero-text h2 {
 	font-size: 96px;
-	color: #fff;
+	color: gray;
 	line-height: 1;
 }
 
@@ -560,7 +564,7 @@ Add section
 }
 
 .add-text h2 span {
-	color: #fcff18;
+	color: white;
 }
 
 .add-text ul {
@@ -686,6 +690,20 @@ BMI section
 	padding-top: 9px;
 }
 
+.blackbg .site-btn{
+	background: white;
+	color: black;
+}
+
+.blackbg .site-btn:hover{
+	background: gray;
+	color: black;
+}
+
+.blackbg h2 span{
+	background: gray;
+	color: black;
+}
 /* ----------------
 Newsletter section
  ---------------------*/
@@ -812,7 +830,7 @@ Other Pages
 	height: 6px;
 	bottom: 0;
 	left: 0;
-	background: #fcff18;
+	background: gray;
 }
 
 /* ----------------
@@ -900,7 +918,7 @@ Classes Page
  ---------------------*/
 
 .service-section {
-	padding: 122px 0 55px;
+	/* padding: 20px 0 55px; */
 }
 
 .service-section .icon-box-item {
@@ -960,7 +978,7 @@ Classes Page
 	width: 29px;
 	height: 3px;
 	margin-top: 18px;
-	background: #fcff18;
+	background: gray;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
@@ -1125,7 +1143,7 @@ Blog page
 	font-size: 14px;
 	border-radius: 50%;
 	color: #242424;
-	background: #fcff18;
+	background: gray;
 	text-align: center;
 }
 

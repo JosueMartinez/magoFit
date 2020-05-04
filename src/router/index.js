@@ -18,10 +18,17 @@ const Routes = [
                 path: '/home', 
                 name: 'Home', 
                 component: () => import ("@/components/Home"),
-                beforeEnter: (to, from, next) => {
-                    console.log(to.query.baseball)
-                    let whereTo = to.query.baseball ? 'isBaseball' : 'isFitness';
-                    console.log(whereTo)
+                beforeEnter: (to, from, next) => {                                      
+                    let whereTo = "";
+
+                    if(to.query.baseball){
+                        whereTo = 'isBaseball'
+                    }else if(to.query.fitness){
+                        whereTo = 'isFitness'
+                    }else{
+                        whereTo = store.state.baseball ? "isBaseball" : "isFitness";
+                    }
+                    
                     store.commit(whereTo);
                     next();
                 }

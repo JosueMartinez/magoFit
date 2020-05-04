@@ -2,7 +2,7 @@
     <div>
         <header class="header-section">
 		<a href="home.html" class="site-logo">
-			<img src="img/logo.png" alt="">
+			<img src="assets/logo.png" alt="">
 		</a>
 		<ul class="main-menu">
 			<li v-for="(item, index) in linkEntries" :key="index">
@@ -10,8 +10,10 @@
 			</li>
 			<li class="header-right">
 				<div class="hr-box">
-					<img src="img/location-icon.png" alt="">
-					<h6>1525  Amazing Lane, Los Angeles, CA</h6>
+					<div class="row">
+						<div class="col-md-2"><font-awesome-icon :icon="['fas', 'map-marker-alt']" size="1x" /></div>
+						<div class="col-md-10"><h6>{{address}}</h6></div>
+					</div>
 				</div>
 			</li>
 		</ul>
@@ -21,20 +23,16 @@
 </template>
 
 <script>
+
+import constants from '../Utils/Constants'
+
 export default {
 	name: 'Header',
 	data() {
 		return {
-			linkEntries: [
-				{name: 'home', routeTo: '/home'},
-				{name: 'about', routeTo: '/about'},
-				{name: 'services', routeTo: '/services'}
-			]
+			linkEntries: constants.linkEntries,
+			address: constants.contacts.address
 		}
 	},
 }
 </script>
-
-<style lang="stylus" scoped>
-
-</style>

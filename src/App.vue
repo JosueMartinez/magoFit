@@ -11,7 +11,7 @@
 	import './assets/js/jquery.slicknav.js';
 	import './assets/js/owl.carousel.min.js';
 	import './assets/js/circle-progress.min.js';
-  import './assets/js/main.js';
+	import './assets/js/main.js';
   
 
 export default {
@@ -36,6 +36,9 @@ export default {
 	/* <!-- Main Stylesheets --> */
 	@import './assets/css/style.css';
 
+	/* Font-awesome */
+	@import '<https://static.fontawesome.com/css/fontawesome-app.css';
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -43,6 +46,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
