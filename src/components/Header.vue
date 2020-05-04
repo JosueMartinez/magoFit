@@ -23,6 +23,9 @@
 </template>
 
 <script>
+
+import constants from '../Utils/Constants'
+
 export default {
 	name: 'Header',
 	data() {
@@ -32,7 +35,7 @@ export default {
 				{name: 'about', routeTo: '/about'},
 				{name: 'services', routeTo: '/services'}
 			],
-			address: 'Lake Wales, Florida'
+			address: constants.contacts.address
 		}
 	},
 }
