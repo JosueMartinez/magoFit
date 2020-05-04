@@ -23,16 +23,15 @@
 </template>
 
 <script>
+
+import constants from '../Utils/Constants'
+
 export default {
 	name: 'Header',
 	data() {
 		return {
-			linkEntries: [
-				{name: 'home', routeTo: '/home'},
-				{name: 'about', routeTo: '/about'},
-				{name: 'services', routeTo: '/services'}
-			],
-			address: 'Lake Wales, Florida'
+			linkEntries: constants.linkEntries,
+			address: constants.contacts.address
 		}
 	},
 }

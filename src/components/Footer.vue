@@ -1,54 +1,38 @@
 <template>
     <div>
         <!-- Footer section -->
-	<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+	<footer class="footer-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget">
 						<h4>Location</h4>
 						<div class="fw-info-box">
-							<img src="img/icons/1.png" alt="">
 							<div class="fw-info-text">
-								<p>1525  Awesome Lane, Los Angeles, CA</p>
+									<p>{{contacts.address}}</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget">
-						<h4>Subscriptions</h4>
+						<h4>Contacts</h4>
 						<div class="fw-info-box">
-							<img src="img/icons/2.png" alt="">
 							<div class="fw-info-text">
-								<p>+1 (603)535-4592</p>
-								<p>+1 (603)535-4556</p>
+								<p>{{contacts.email}}</p>
+								<p>{{contacts.phone}}</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="footer-widget">
-						<h4>E-mail</h4>
-						<div class="fw-info-box">
-							<img src="img/icons/3.png" alt="">
-							<div class="fw-info-text">
-								<p>Contact@xgym.com</p>
-								<p>www.xgym.com</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
+				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget">
 						<h4>Social Media</h4>
 						<div class="fw-info-box">
-							<img src="img/icons/4.png" alt="">
-							<div class="social-links">
-								<a href="#"><i class="fa fa-pinterest"></i></a>
-								<a href="#"><i class="fa fa-facebook"></i></a>
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-dribbble"></i></a>
+							<div class="social-links icon">
+								<a :href="contacts.socialMedia.ig" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" size="1x" /></a>
+								<a :href="contacts.socialMedia.fb" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']" size="1x" /></a>
+								<a :href="contacts.socialMedia.youtube" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" size="1x" /></a>
 							</div>
 						</div>
 					</div>
@@ -60,11 +44,9 @@
 					
 				<div class="col-md-6 order-1 order-md-2">
 					<ul class="footer-menu">
-						<li><a href="">Home</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Classes</a></li>
-						<li><a href="">News</a></li>
-						<li><a href="">Contact</a></li>
+						<li v-for="(item, index) in linkEntries" :key="index">
+							<router-link :to="item.routeTo" exact>{{ item.name }}</router-link>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -75,11 +57,26 @@
 </template>
 
 <script>
+
+import constants from '../Utils/Constants'
+
 export default {
-    name: 'Footer'
+	name: 'Footer',
+	data() {
+		return {
+			contacts: constants.contacts,
+			linkEntries: constants.linkEntries
+		}
+	},
 }
 </script>
 
 <style scoped>
+	.footer-section{
+		background-color: black;
+	}
 
+	.icon{
+		color: white;
+	}
 </style>
