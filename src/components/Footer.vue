@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget">
-								<h4>Location</h4>
+						<h4>Location</h4>
 						<div class="fw-info-box">
 							<div class="fw-info-text">
 									<p>{{contacts.address}}</p>
@@ -18,7 +18,6 @@
 					<div class="footer-widget">
 						<h4>Contacts</h4>
 						<div class="fw-info-box">
-							<img src="img/icons/3.png" alt="">
 							<div class="fw-info-text">
 								<p>{{contacts.email}}</p>
 								<p>{{contacts.phone}}</p>
@@ -28,7 +27,7 @@
 				</div>
 				<div class="col-lg-4 col-sm-6">
 					<div class="footer-widget">
-								<h4>Social Media</h4>
+						<h4>Social Media</h4>
 						<div class="fw-info-box">
 							<div class="social-links icon">
 								<a :href="contacts.socialMedia.ig" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" size="1x" /></a>
