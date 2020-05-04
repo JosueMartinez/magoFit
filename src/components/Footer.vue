@@ -45,11 +45,9 @@
 					
 				<div class="col-md-6 order-1 order-md-2">
 					<ul class="footer-menu">
-						<li><a href="">Home</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Classes</a></li>
-						<li><a href="">News</a></li>
-						<li><a href="">Contact</a></li>
+						<li v-for="(item, index) in linkEntries" :key="index">
+							<router-link :to="item.routeTo" exact>{{ item.name }}</router-link>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -67,7 +65,8 @@ export default {
 	name: 'Footer',
 	data() {
 		return {
-			contacts: constants.contacts
+			contacts: constants.contacts,
+			linkEntries: constants.linkEntries
 		}
 	},
 }

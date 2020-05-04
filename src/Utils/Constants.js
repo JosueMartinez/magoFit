@@ -8,7 +8,12 @@ const constants = {
             ig: 'https://www.facebook.com/elmago.rosario',
             youtube: 'https://www.youtube.com/channel/UCXeFUA-HWlx_IdqlzpRxP-g'
         }
-    }
+    },
+    linkEntries: [
+        {name: 'Home', routeTo: '/home'},
+        {name: 'About', routeTo: '/about'},
+        {name: 'Services', routeTo: '/services'}
+    ]
 
 };
 

@@ -30,11 +30,7 @@ export default {
 	name: 'Header',
 	data() {
 		return {
-			linkEntries: [
-				{name: 'home', routeTo: '/home'},
-				{name: 'about', routeTo: '/about'},
-				{name: 'services', routeTo: '/services'}
-			],
+			linkEntries: constants.linkEntries,
 			address: constants.contacts.address
 		}
 	},
