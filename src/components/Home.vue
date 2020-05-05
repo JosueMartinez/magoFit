@@ -198,9 +198,5 @@ export default {
     span{
         background: gray;
         color: white
-    }
-
-    .blackbg{
-        background: black;
-    }    
+    }  
 </style>
