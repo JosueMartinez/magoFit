@@ -771,7 +771,7 @@ Footer section
 }
 
 .footer-widget .fw-info-box .fw-info-text {
-	max-width: 145px;
+	/* max-width: 145px; */  /*prevent footer trim*/
 	overflow: hidden;
 }
 
