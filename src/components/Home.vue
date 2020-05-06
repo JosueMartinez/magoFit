@@ -101,7 +101,7 @@
         <!-- Baseball End -->
 
         <!-- Fitness -->
-        <section  v-if="!baseballData" class="service-section">
+        <section  v-if="!baseballData" class="program-section">
             <div class="container">
                  <div class="row justify-content-md-center">
                     <div class="col-lg-4 col-sm-6">
@@ -198,9 +198,9 @@ export default {
     span{
         background: gray;
         color: white
-    }
+    }  
 
-    .blackbg{
-        background: black;
-    }    
+    .program-section{
+        padding: 20px 0 55px;
+    }
 </style>
