@@ -1004,7 +1004,7 @@ Classes Page
 
 .pricing-box:hover {
 	background: black;
-	border-color: black;
+	border-color: white;
 }
 
 .pricing-box:hover h2,

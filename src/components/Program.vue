@@ -3,31 +3,26 @@
          <SectionHeader :text="headerText" :color="headerColor" :image="headerImage" />
 
          <section class="service-section">            
-                <!-- Baseball Program -->
-                <div  v-if="baseballData" class="row text-center">
-                    <div v-for="(item,index) in baseballProgram" class="col-lg-6 icon-box-item" :key="index">
-                        <div class="ib-icon">
-                            <font-awesome-icon :icon="['fas', 'baseball-ball']" size="1x" />
-                        </div>
-                        <h4>{{ item.Title }}</h4>
-                        <h6><span>{{item.SubTitle}}</span></h6>
-                        <p>{{item.Description}}</p>
-                    </div>
-                </div>
-                <!-- Baseball Program END -->         
+			<!-- Baseball Program -->
+			<div class="container">
+				<div class="row">
+					<IconItemBox v-for="(item,index) in baseballProgram" :key="index" 
+					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" />
+				</div>
+			</div>
+			<!-- Baseball Program END -->         
         </section>
 
-        <section class="pricing-section graybg">
-		<div class="container">
-			<div class="section-title text-white text-center">
-				<h2>Prices for <span>everybody</span></h2>
+        <section class="pricing-section graybg" v-if="baseballData">
+			<div class="container">
+				<div class="section-title text-white text-center">
+					<h2>Prices for <span>everybody</span></h2>
+				</div>
+				<div class="row">					
+					<ProgramBox v-for="(item,index) in baseballProgramDetails" :program="item" :key="index" />
+				</div>
 			</div>
-			<div class="row">
-				
-				<ProgramBox v-for="(item,index) in baseballProgramDetails" :program="item" :key="index" />
-			</div>
-		</div>
-	</section>
+		</section>
     </div>
 </template>
 
@@ -35,12 +30,14 @@
 
 import SectionHeader from './Utils/TopSectionHeader'
 import ProgramBox from './Utils/ProgramBox'
+import IconItemBox from './Utils/IconItemBox'
 
 export default {
     name: 'Program',
     components: {
 		SectionHeader,
-		ProgramBox
+		ProgramBox,
+		IconItemBox
     },
     data(){
         let isBaseball = this.$store.state.baseball; 
