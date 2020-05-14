@@ -4,31 +4,31 @@
 
          <section class="service-section">            
 			<!-- Baseball Program -->
-			<div v-if="baseballData" class="container">
+			<div class="container">
 				<div class="row">
-					<IconItemBox v-for="(item,index) in baseballProgram" :key="index" :twoColumns="true"
-					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" :icon="'baseball-ball'" />
+					<IconItemBox v-for="(item,index) in program" :key="index" :twoColumns="true"
+					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" :icon="item.Icon" />
 				</div>
 			</div>
 			<!-- Baseball Program END -->   
 
 			<!-- Fitness Program -->
-			<div v-if="!baseballData" class="container">
+			<!-- <div v-if="!baseballData" class="container">
 				<div class="row">
 					<IconItemBox v-for="(item,index) in fitnessProgram" :key="index" 
 					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" :icon="item.Icon" />
 				</div>
-			</div>
+			</div> -->
 			<!-- Fitness Program END --> 
         </section>
 
-        <section class="pricing-section graybg" v-if="baseballData">
+        <section class="pricing-section graybg">
 			<div class="container">
 				<div class="section-title text-white text-center">
 					<h2>Prices for <span>everybody</span></h2>
 				</div>
 				<div class="row">					
-					<ProgramBox v-for="(item,index) in baseballProgramDetails" :program="item" :key="index" />
+					<ProgramBox v-for="(item,index) in programsPricings" :program="item" :key="index" />
 				</div>
 			</div>
 		</section>
@@ -57,8 +57,8 @@ export default {
             headerText: "Programs",
             headerColor: isBaseball ? 'black' : 'white',
             baseballProgram: [
-                {Title: "Little Athletes Specialized Classes", SubTitle: 'Ages 3 to 5', Description: "Introduce your toddler or preschooler to the fun and excitement of Baseball." },
-                {Title: "Youth Baseball Classes", SubTitle: 'Ages 5 to 12', Description: "Polk County best instructional classes for boys and girls of all ages and skill levels." },
+                {Title: "Little Athletes Specialized Classes", Icon: 'baseball-ball', SubTitle: 'Ages 3 to 5', Description: "Introduce your toddler or preschooler to the fun and excitement of Baseball." },
+                {Title: "Youth Baseball Classes", Icon: 'baseball-ball', SubTitle: 'Ages 5 to 12', Description: "Polk County best instructional classes for boys and girls of all ages and skill levels." },
 			],			
 			baseballProgramDetails: [
 				{
@@ -175,7 +175,15 @@ export default {
 				},
 			],
         }
-    }
+    },
+	computed: {
+		programsPricings(){
+			return this.baseballData ? this.baseballProgramDetails : this.baseballProgramDetails;
+		},
+		program(){
+			return this.baseballData ? this.baseballProgram : this.fitnessProgram;
+		}
+	}
 }
 </script>
 
