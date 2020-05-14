@@ -174,11 +174,72 @@ export default {
 					Description: 'Losing fat is no easy feat, but a little pro advice can go a long way so If blasting body fat and burning calories is one of your main  goals Reach us out and let us help you !'
 				},
 			],
+			fitnessProgramDetails: [
+				{
+					name: 'Individual Consultation',
+					classes: [
+						{
+							name: 'Diet Plans',
+							price: 'Please Call'
+						},
+						{
+							name: 'Consultation',
+							price: '$20'
+						}
+					]
+				},
+				{
+					name: 'Personal Trainning Weekly Package',
+					classes: [
+						{
+							name: '1 Session',
+							price: '$50'
+						},
+						{
+							name: '2 Sessions',
+							price: '$90'
+						},
+						{
+							name: '3 Sessions',
+							price: '$120'
+						},
+						{
+							name: '4 Sessions',
+							price: '$140'
+						},
+						{
+							name: '5 Sessions',
+							price: '$160'
+						}
+					]
+				},
+				{
+					name: 'Groups Trainning Sessions',
+					classes: [
+						{
+							name: 'Groups of 2',
+							price: '$30'
+						},
+						{
+							name: 'Groups of 3',
+							price: '$25'
+						},
+						{
+							name: 'Groups of 4',
+							price: '$20'
+						},
+						{
+							name: 'Groups of 7',
+							price: '$15'
+						},
+					]
+				},
+			]
         }
     },
 	computed: {
 		programsPricings(){
-			return this.baseballData ? this.baseballProgramDetails : this.baseballProgramDetails;
+			return this.baseballData ? this.baseballProgramDetails : this.fitnessProgramDetails;
 		},
 		program(){
 			return this.baseballData ? this.baseballProgram : this.fitnessProgram;

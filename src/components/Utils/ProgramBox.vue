@@ -5,7 +5,7 @@
                 <!-- <p>classes</p> -->
                 <div class="row" v-for="(item,index) in program.classes" :key="index">
                     <div class="col">{{item.name}}</div>
-                    <div class="col">{{item.duration}}</div>
+                    <div class="col" v-if="item.duration">{{item.duration}}</div>
                     <div class="col">{{item.price}}</div>
                 </div>
             </div>
