@@ -976,9 +976,8 @@ Classes Page
 	transition: all 0.4s;
 }
 
-.pricing-box .row {
-	list-style: none;
-	padding-top: 40px;
+.pricing-box .row {	
+	margin-top: 40px; 
 }
 
 .pricing-box .row .col {

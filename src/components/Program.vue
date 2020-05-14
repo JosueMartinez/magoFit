@@ -2,24 +2,13 @@
     <div>
          <SectionHeader :text="headerText" :color="headerColor" :image="headerImage" />
 
-         <section class="service-section">            
-			<!-- Baseball Program -->
+         <section class="service-section">  
 			<div class="container">
 				<div class="row">
-					<IconItemBox v-for="(item,index) in program" :key="index" :twoColumns="true"
+					<IconItemBox v-for="(item,index) in program" :key="index" :twoColumns="baseballData"
 					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" :icon="item.Icon" />
 				</div>
 			</div>
-			<!-- Baseball Program END -->   
-
-			<!-- Fitness Program -->
-			<!-- <div v-if="!baseballData" class="container">
-				<div class="row">
-					<IconItemBox v-for="(item,index) in fitnessProgram" :key="index" 
-					:title="item.Title" :subtitle="item.SubTitle" :description="item.Description" :icon="item.Icon" />
-				</div>
-			</div> -->
-			<!-- Fitness Program END --> 
         </section>
 
         <section class="pricing-section graybg">
