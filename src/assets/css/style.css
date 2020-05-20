@@ -12,12 +12,13 @@
 }
 
 .graybg{
-	background: gray;
+	background: #353535;
 }
 
+.whitebg{
+	background: white;
+}
 
-
- 
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
@@ -535,7 +536,7 @@ Hero section
 
 .hero-text h2 {
 	font-size: 96px;
-	color: gray;
+	color: #353535;
 	line-height: 1;
 }
 
@@ -708,12 +709,12 @@ BMI section
 }
 
 .blackbg .site-btn:hover{
-	background: gray;
+	background: #353535;
 	color: black;
 }
 
 .blackbg h2 span{
-	background: gray;
+	background: #353535;
 	color: black;
 }
 /* ----------------
@@ -771,7 +772,7 @@ Footer section
 }
 
 .footer-widget .fw-info-box .fw-info-text {
-	max-width: 145px;
+	/* max-width: 145px; */  /*prevent footer trim*/
 	overflow: hidden;
 }
 
@@ -842,7 +843,7 @@ Other Pages
 	height: 6px;
 	bottom: 0;
 	left: 0;
-	background: gray;
+	background: #353535;
 }
 
 /* ----------------
@@ -945,21 +946,25 @@ Classes Page
 	margin-bottom: 74px;
 }
 
+.pricing-section .section-title span{
+	background: white;
+}
+
 .pricing-box {
 	position: relative;
 	border: 2px solid #ffffff;
 	text-align: center;
 	padding: 62px 40px 31px;
-	height: 593px;
+	height: 500px;
 	margin-bottom: 30px;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
 
 .pricing-box h2 {
-	font-size: 48px;
+	font-size: 28px;
 	color: #fff;
-	margin-bottom: 3px;
+	margin-bottom: 20px;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
@@ -971,26 +976,15 @@ Classes Page
 	transition: all 0.4s;
 }
 
-.pricing-box ul {
-	list-style: none;
-	padding-top: 40px;
+.pricing-box .row {	
+	margin-top: 40px; 
 }
 
-.pricing-box ul li {
+.pricing-box .row .col {
 	display: block;
 	color: #d6d6d6;
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 10px;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.pricing-box ul li span {
-	display: inline-block;
-	width: 29px;
-	height: 3px;
-	margin-top: 18px;
-	background: gray;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
@@ -1003,21 +997,23 @@ Classes Page
 	margin-left: -92px;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+	background-color: white;
+	color: black;
 }
 
 .pricing-box:hover {
-	background: #fcff18;
-	border-color: #fcff18;
+	background: black;
+	border-color: white;
 }
 
 .pricing-box:hover h2,
 .pricing-box:hover p,
 .pricing-box:hover ul li {
-	color: #242424;
+	color: white;
 }
 
 .pricing-box:hover ul li span {
-	background: #242424;
+	background: white;
 }
 
 .pricing-box:hover .site-btn {
@@ -1155,7 +1151,7 @@ Blog page
 	font-size: 14px;
 	border-radius: 50%;
 	color: #242424;
-	background: gray;
+	background: #353535;
 	text-align: center;
 }
 

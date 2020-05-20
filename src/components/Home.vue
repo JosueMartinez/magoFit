@@ -143,8 +143,8 @@ export default {
             headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-home-2.jpg',
             headerText: isBaseball ? "Practice with Purpose.  Play With Passion." : "Don’t be afraid of being a beginner",
             baseballProgram: [
-                {Title: "Minor Athletics Classes", Description: "specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
-                {Title: "Youth Baseball Classes", Description: "s designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
+                {Title: "Minor Athletics Classes", Description: "Specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
+                {Title: "Youth Baseball Classes", Description: "Designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
                 {Title: "Private Lessons", Description: "This program offers each player the extra work needed to improve their game specifically. Private baseball lessons for hitting, defense, pitching, speed and agility’s are available." },
                 {Title: "Team Practices", Description: "Are you looking to improve your team before any type of tournament and/or game? Our professional baseball coach Francisco Rosario can help you with a more intense practice designed to your needs." },
                 {Title: "Baseball Camps", Description: "A camp where athletes aged 5 & up are trained in different aspects of the baseball sport. This camp will offer numerous benefits for baseball players." },
