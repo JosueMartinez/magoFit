@@ -5,7 +5,7 @@
         </div>
         <h4>{{title}}</h4>
         <h6><span>{{subtitle}}</span></h6>
-        <p>{{description}}</p>
+        <p class="text-justify">{{description}}</p>
     </div>    
 </template>
 

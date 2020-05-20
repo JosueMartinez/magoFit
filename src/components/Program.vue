@@ -125,36 +125,36 @@ export default {
 				{
 					Title: "Nutrition advice ",
 					Icon: "apple-alt", 
-					Description: "Good nutrition is one of the keys to a healthy life. You can improve your health by keeping a balanced diet. You should eat foods that contain vitamins and minerals. This includes fruits, vegetables, whole grains, dairy, and a source of protein." },
+					Description: "Health can be improved by following a balanced diet,  eating foods that contain vitamins and minerals. This includes fruits, vegetables, whole grains, dairy, and a protein." },
                 {
 					Title: "Weight lose advice ", 
 					Icon: 'weight', 
-					Description: "If you want to be successful in weight loss, you have to focus on more than just how you look. An approach that taps into how you feel, your overall health, and your mental health is often the most efficient." 
+					Description: "To be successful in weight loss, you have to focus on more than just your look. An approach that taps into how you feel, your overall health, and your mental health is often the most efficient." 
 				},
 				{
 					Title: 'Muscle Tone',
 					Icon: 'dumbbell',
-					Description: 'Do you want more muscle tone? Of course you do! Maybe you want to tone up your legs, or your stomach, your arms, your back, maybe you want to tone up your entire body.  And that’s why you’re here. You want to know all of the best tips, tricks, and secrets for how to get toned as quickly and effectively as possible.'
+					Description: 'Of course you want to be toned! And that’s why you’re here. You want to know all of the best tips, tricks, and secrets for how to get toned as quickly and effectively as possible.'
 				},
 				{
 					Title: 'Cardio Fitness',
 					Icon: 'heartbeat',
-					Description: 'Cardio seems like the simplest thing in the world: you just need to do it. This, however, doesn’t explain the wide range of results that people get with it. Some people see quick results while others don’t seem to achieve anything.  To help you get started on the right foot with your cardio, I’ve compiled a few tips that any beginner should keep in mind.'
+					Description: 'People can get a wide range of results because of cardio. To help you get started on the right foot with your cardio, I’ve compiled a few tips that any beginner should keep in mind.'
 				},
 				{
 					Title: 'Core Strength',
 					Icon: 'dumbbell',
-					Description: 'You’ve probably been hearing a lot about your body’s core section recently, and many athletes have known about its function in fitness for years. The core is the midsection, but it encompasses much more than just the abdominal muscles: It includes all muscle groups that stabilize the spine and pelvis, which are responsible for transmitting energy to other areas of the body during physical activity. A strong, flexible core makes movement more robust and balanced, helping to prevent injuries. '
+					Description: 'The core includes all muscle groups that stabilize the spine and pelvis, which are responsible for transmitting energy to other areas of the body during physical activity while preventing injuries.'
 				},
 				{
 					Title: 'Body Transformation',
 					Icon: 'sync',
-					Description: 'It’s that time of year where the gym population grows and the resolutions are made.  People from all walks of life are setting new goals, and getting in shape is among the most popular resolutions made.  Maybe you’re someone who is brand new to this world of fitness and looking to start on the right foot. Perhaps you’re one of the many who started and stopped short but is now ready to re-commit to the mission of achieving your best.'
+					Description: 'People always set goals, and getting in shape is among the most popular resolutions made. We are here to help you achieve your goals no matter if you are starting or re-committing.'
 				},
 				{
 					Title: '6 Weeks Transformation',
 					Icon: 'calendar',
-					Description: 'The program that follows is a 6 -week routine that is designed to help you improve strength, size, endurance, conditioning, and overall health. The way this will work is we are going to keep the body guessing and focus on each aspect of your fitness one at a time.'
+					Description: 'This program is designed to help you improve strength, size, endurance, conditioning, and overall health. The way this will work is we are going to keep the body guessing and focus on each aspect of your fitness one at a time.'
 				},
 				{
 					Title: 'Fat Burn',
