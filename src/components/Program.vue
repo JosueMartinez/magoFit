@@ -207,19 +207,19 @@ export default {
 					classes: [
 						{
 							name: 'Groups of 2',
-							price: '$30'
+							price: '$30 / pp'
 						},
 						{
 							name: 'Groups of 3',
-							price: '$25'
+							price: '$25 / pp'
 						},
 						{
 							name: 'Groups of 4',
-							price: '$20'
+							price: '$20 / pp'
 						},
 						{
 							name: 'Groups of 7',
-							price: '$15'
+							price: '$15 / pp'
 						},
 					]
 				},
