@@ -30,9 +30,9 @@
 						<h4>Social Media</h4>
 						<div class="fw-info-box">
 							<div class="social-links icon">
-								<a :href="contacts.socialMedia.ig" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" size="1x" /></a>
-								<a :href="contacts.socialMedia.fb" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']" size="1x" /></a>
-								<a :href="contacts.socialMedia.youtube" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" size="1x" /></a>
+								<a :href="contacts.socialMedia.ig" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'instagram']" size="2x" /></a>
+								<a :href="contacts.socialMedia.fb" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'facebook']" size="2x" /></a>
+								<a :href="contacts.socialMedia.youtube" rel="noopener noreferrer" target="_blank"><font-awesome-icon :icon="['fab', 'youtube']" size="2x" /></a>
 							</div>
 						</div>
 					</div>
