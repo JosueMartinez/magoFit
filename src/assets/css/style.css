@@ -185,9 +185,29 @@ Commom elements
 	margin: 10px;
 }
 
+.btn-gray-hover{
+	display: inline-block;
+	border: none;
+	font-size: 18px;
+	font-weight: 700;
+	min-width: 228px;
+	padding: 20px 40px;
+	background: black;
+	color: white;
+	line-height: normal;
+	cursor: pointer;
+	text-align: center;
+	margin: 10px;
+}
+
 .site-btn:hover {
 	color: #353535;
 	background: white;
+}
+
+.btn-gray-hover:hover {
+	color: white;
+	background: #353535;
 }
 
 .site-btn.sb-dark {
