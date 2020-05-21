@@ -45,6 +45,21 @@
                 </div>
             </div>
         </section>
+
+        <section v-if="baseballData" class="message-for-parents graybg">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6">
+                        <h2 class="message-title">Message For <span>Parents</span></h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="message-body">We train individuals and turn them into great athletes.  Your child's safety will always be our number one priority</h4>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
         <!-- Baseball End -->
 
         <!-- Fitness -->
@@ -202,5 +217,17 @@ export default {
 
     .program-section{
         padding: 20px 0 55px;
+    }
+    
+    .message-title{
+        color: white;
+    }
+
+    .message-body{
+        color: white;
+    }
+
+    .message-for-parents{
+        padding: 84px 0;
     }
 </style>
