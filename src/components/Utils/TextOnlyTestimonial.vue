@@ -2,10 +2,10 @@
     <div class="col-lg-4">
         <div class="icon-box-item testimonial">
             <div class="row">
-                <em>"{{body}}"</em>
+                <em>"{{testimonial.body}}"</em>
             </div>
             <div class="row float-right">
-                <span><strong>{{by}}</strong> <br> {{relation}} {{childName}}</span>
+                <span><strong>{{testimonial.by}}</strong> <br> {{testimonial.relation}} {{testimonial.childName}}</span>
             </div>            
         </div>
     </div> 
@@ -15,10 +15,7 @@
 export default {
     name: 'TextOnly',
     props: {
-        body: String,
-        by: String,
-        relation: String,
-        child: String
+        testimonial: Object
     },
     data() {
         return {
@@ -27,14 +24,8 @@ export default {
     },
     computed : {
         childName(){
-            return this.child ? `of ${this.child}` : "";
+            return this.testimonial.child ? `of ${this.testimonial.child}` : "";
         }
     }
 }
 </script>
-
-<style scoped>
-    .testimonial{
-        margin: 50px;
-    }
-</style>

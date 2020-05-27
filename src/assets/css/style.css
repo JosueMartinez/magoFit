@@ -21,6 +21,20 @@
 
 .service-section{
 	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.testimonial{
+	margin: 50px;
+}
+
+.testimonial img{
+	min-height: 250px;
+	max-height: 250px;
+}
+
+.testimonial em{
+	margin-top: 10px;
 }
 
 /*----------------------------------------*/

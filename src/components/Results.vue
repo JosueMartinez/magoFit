@@ -7,10 +7,18 @@
 
         <section class="service-section">  
 			<div class="container">
-				<div class="row">
-                    <TextTestimonial v-for="(item,index) in testimonials" :key="index"
-                     :body="item.body" :by="item.by" :relation="item.relation" :child="item.child" />
+                
+                <!-- Baseball Testimonials -->
+				<div class="row" v-if="baseballData">
+                    <TextTestimonial v-for="(item,index) in testimonials" :key="index" :testimonial="item"/>
 				</div>
+                <!-- Baseball Testimonials End -->
+
+                <!-- Fitness Results -->
+                <div class="row" v-if="!baseballData">
+                    <BeforeAfter v-for="(item,index) in testimonials" :key="index" :result="item" />
+                </div>
+                <!-- Fitness Results End -->
 			</div>
         </section>
     </div>
@@ -20,12 +28,14 @@
 
 import SectionHeader from './Utils/TopSectionHeader'
 import TextTestimonial from './Utils/TextOnlyTestimonial'
+import BeforeAfter from './Utils/BeforeAfter'
 
 export default {
     name: 'Results',
     components: {
         SectionHeader,
-        TextTestimonial
+        TextTestimonial,
+        BeforeAfter
     },
     data() {
         let isBaseball = this.$store.state.baseball; 
@@ -62,7 +72,46 @@ export default {
                 },
             ],
             fitnessTestimonials : [
-
+                {
+                    beforePic: '',
+                    afterPic: '',
+                    duration: '3 weeks',
+                    weightLost: '12 kg',
+                    client: 'John Doe',
+                    testimonial: 'Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. '
+                },
+                {
+                    beforePic: '',
+                    afterPic: '',
+                    duration: '3 weeks',
+                    weightLost: '12 kg',
+                    client: 'John Doe',
+                    testimonial: 'Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. '
+                },
+                {
+                    beforePic: '',
+                    afterPic: '',
+                    duration: '3 weeks',
+                    weightLost: '12 kg',
+                    client: 'John Doe',
+                    testimonial: 'Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. '
+                },
+                {
+                    beforePic: '',
+                    afterPic: '',
+                    duration: '3 weeks',
+                    weightLost: '12 kg',
+                    client: 'John Doe',
+                    testimonial: 'Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. '
+                },
+                {
+                    beforePic: '',
+                    afterPic: '',
+                    duration: '3 weeks',
+                    weightLost: '12 kg',
+                    client: 'John Doe',
+                    testimonial: 'Donec nec sapien in urna fermentum ornare. Morbi vel ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. '
+                }
             ]
         }
     },
