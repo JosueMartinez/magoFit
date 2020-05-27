@@ -12,7 +12,8 @@ const constants = {
     linkEntries: [
         {name: 'Home', routeTo: '/home'},
         {name: 'About', routeTo: '/about'},
-        {name: 'Programs', routeTo: '/programs'}
+        {name: 'Programs', routeTo: '/programs'},
+        {name: 'Results', routeTo: '/results'}
     ]
 
 };
