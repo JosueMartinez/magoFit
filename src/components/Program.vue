@@ -244,8 +244,4 @@ export default {
         padding: 0 4px;
         color: white;
     }
-
-    .service-section{
-        margin-top: 30px;
-    }
 </style>

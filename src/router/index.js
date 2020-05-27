@@ -42,7 +42,12 @@ const Routes = [
                 path: '/programs', 
                 name: 'Program', 
                 component: () => import ("@/components/Program")
-            }
+            },
+            { 
+                path: '/results', 
+                name: 'Results', 
+                component: () => import ("@/components/Results")
+            },
         ]
     }
     
