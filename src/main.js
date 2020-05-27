@@ -17,7 +17,12 @@ import { faUserSecret,
          faAppleAlt, 
          faCalendarCheck, 
          faAddressCard, 
-         faThumbsUp } from '@fortawesome/free-solid-svg-icons'
+         faThumbsUp,
+         faHeartbeat, 
+         faSync,
+         faCalendar,
+         faFire
+        } from '@fortawesome/free-solid-svg-icons'
 
 // Brand Icons
 import { faInstagram, 
@@ -42,7 +47,11 @@ library.add(
   faInstagram, 
   faFacebook, 
   faTwitter, 
-  faYoutube
+  faYoutube,
+  faHeartbeat,
+  faSync,
+  faCalendar,
+  faFire
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

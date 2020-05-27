@@ -45,6 +45,21 @@
                 </div>
             </div>
         </section>
+
+        <section v-if="baseballData" class="message-for-parents graybg">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-6">
+                        <h2 class="message-title">Message For <span>Parents</span></h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="message-body">We train individuals and turn them into great athletes.  Your child's safety will always be our number one priority</h4>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
         <!-- Baseball End -->
 
         <!-- Fitness -->
@@ -101,7 +116,7 @@
         <!-- Baseball End -->
 
         <!-- Fitness -->
-        <section  v-if="!baseballData" class="service-section">
+        <section  v-if="!baseballData" class="program-section">
             <div class="container">
                  <div class="row justify-content-md-center">
                     <div class="col-lg-4 col-sm-6">
@@ -143,8 +158,8 @@ export default {
             headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-home-2.jpg',
             headerText: isBaseball ? "Practice with Purpose.  Play With Passion." : "Don’t be afraid of being a beginner",
             baseballProgram: [
-                {Title: "Minor Athletics Classes", Description: "specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
-                {Title: "Youth Baseball Classes", Description: "s designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
+                {Title: "Minor Athletics Classes", Description: "Specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
+                {Title: "Youth Baseball Classes", Description: "Designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
                 {Title: "Private Lessons", Description: "This program offers each player the extra work needed to improve their game specifically. Private baseball lessons for hitting, defense, pitching, speed and agility’s are available." },
                 {Title: "Team Practices", Description: "Are you looking to improve your team before any type of tournament and/or game? Our professional baseball coach Francisco Rosario can help you with a more intense practice designed to your needs." },
                 {Title: "Baseball Camps", Description: "A camp where athletes aged 5 & up are trained in different aspects of the baseball sport. This camp will offer numerous benefits for baseball players." },
@@ -198,9 +213,21 @@ export default {
     span{
         background: gray;
         color: white
+    }  
+
+    .program-section{
+        padding: 20px 0 55px;
+    }
+    
+    .message-title{
+        color: white;
     }
 
-    .blackbg{
-        background: black;
-    }    
+    .message-body{
+        color: white;
+    }
+
+    .message-for-parents{
+        padding: 84px 0;
+    }
 </style>

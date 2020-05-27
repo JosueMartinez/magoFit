@@ -1,8 +1,8 @@
 const constants = {
     contacts: {
         address: 'Lake Wales, Florida',
-        phone: '809-980-1767',
-        email: 'josue.martinezzh@gmail.com',
+        phone: '+1 917 200 1224',
+        email: 'goguin0412@icloud.com',
         socialMedia: {
             fb: 'https://www.instagram.com/elmagofit/',
             ig: 'https://www.facebook.com/elmago.rosario',
@@ -12,7 +12,8 @@ const constants = {
     linkEntries: [
         {name: 'Home', routeTo: '/home'},
         {name: 'About', routeTo: '/about'},
-        {name: 'Services', routeTo: '/services'}
+        {name: 'Programs', routeTo: '/programs'},
+        {name: 'Results', routeTo: '/results'}
     ]
 
 };

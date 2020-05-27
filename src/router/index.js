@@ -39,10 +39,15 @@ const Routes = [
                 component: () => import ("@/components/About") 
             },
             { 
-                path: '/services', 
-                name: 'Services', 
-                component: () => import ("@/components/Services")
-            }
+                path: '/programs', 
+                name: 'Program', 
+                component: () => import ("@/components/Program")
+            },
+            { 
+                path: '/results', 
+                name: 'Results', 
+                component: () => import ("@/components/Results")
+            },
         ]
     }
     
