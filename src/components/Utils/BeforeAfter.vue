@@ -22,20 +22,6 @@ export default {
     name: 'BeforeAfter',
     props: {
         result: Object
-    },
-    data() {
-        return {
-            
-        }
-    },
-    computed: {
-        beforePic(){
-            return '@/assets/img/beforeDefault.jpg'
-        },
-        afterPic(){
-            return '@/assets/img/afterDefault.jpg'
-        }
-    },
-
+    }
 }
 </script>
