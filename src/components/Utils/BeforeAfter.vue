@@ -4,10 +4,10 @@
             <h2 class="text-center">{{result.client}}</h2>
             <div class="row">
                 <div class="col">
-                    <img src="@/assets/img/beforeDefault.jpg" alt="">
+                    <img class="float-right" src="@/assets/img/beforeDefault.jpg" alt="">
                 </div>
                 <div class="col">
-                    <img src="@/assets/img/afterDefault.jpg" alt="">
+                    <img class="float-left" src="@/assets/img/afterDefault.jpg" alt="">
                 </div>
             </div>
             <div class="row text-justify">

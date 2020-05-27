@@ -1,7 +1,7 @@
 <template>
     <div class="col-lg-4">
         <div class="icon-box-item testimonial">
-            <div class="row">
+            <div class="row text-justify">
                 <em>"{{testimonial.body}}"</em>
             </div>
             <div class="row float-right">
