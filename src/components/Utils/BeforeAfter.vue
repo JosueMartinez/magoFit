@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="row text-justify">
-                <em>{{result.testimonial}}</em>
+                <em>"{{result.testimonial}}"</em>
             </div>
         </div>        
     </div>
