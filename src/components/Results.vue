@@ -7,6 +7,8 @@
 
         <section class="service-section">  
 			<div class="container">
+
+                <h4 class="text-center">WHAT CLIENTS SAY ABOUT OUR JOB</h4>
                 
                 <!-- Baseball Testimonials -->
 				<div class="row" v-if="baseballData">
