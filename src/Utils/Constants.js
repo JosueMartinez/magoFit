@@ -13,7 +13,8 @@ const constants = {
         {name: 'Home', routeTo: '/home'},
         {name: 'About', routeTo: '/about'},
         {name: 'Programs', routeTo: '/programs'},
-        {name: 'Results', routeTo: '/results'}
+        {name: 'Results', routeTo: '/results'},
+        {name: 'Contact', routeTo: '/contact'}
     ]
 
 };
