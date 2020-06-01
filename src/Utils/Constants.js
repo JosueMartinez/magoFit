@@ -1,6 +1,6 @@
 const constants = {
     contacts: {
-        address: 'Lake Wales, Florida',
+        address: 'Polk County, Florida',
         phone: '+1 917 200 1224',
         email: 'goguin0412@icloud.com',
         socialMedia: {
@@ -15,7 +15,12 @@ const constants = {
         {name: 'Programs', routeTo: '/programs'},
         {name: 'Results', routeTo: '/results'},
         {name: 'Contact', routeTo: '/contact'}
-    ]
+    ],
+    emailService: {
+        serviceId: 'magofit',
+        templateId: 'magofit',
+        userId: 'user_Fk2OmQ5c7gSOuprk6sahT'
+    }
 
 };
 
