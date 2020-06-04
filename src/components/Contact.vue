@@ -37,21 +37,37 @@
 				</div>
 				<div class="col-lg-8">
 					<h2 class="contact-title">Get in touch</h2>
-					<form class="contact-form" @submit.prevent="sendMail">
-						<div class="row">
-							<div class="col-md-6">
-								<input type="text" placeholder="Your name" v-model="form.name">
+					<ValidationObserver v-slot="{ handleSubmit }">
+						<form class="contact-form" @submit.prevent="handleSubmit(sendMail)">
+							<div class="row">
+								<div class="col-md-6">
+									<ValidationProvider rules="required" v-slot="{ errors }">
+										<input type="text" placeholder="Your name" v-model="form.name">
+										<span>{{errors[0]}}</span>
+									</ValidationProvider>
+								</div>
+								<div class="col-md-6">									
+									<ValidationProvider rules="required|email" v-slot="{ errors }">
+										<input type="text" placeholder="Your e-mail" v-model="form.email">
+										<span>{{errors[0]}}</span>
+									</ValidationProvider>
+								</div>
+								<div class="col-md-12">
+									<ValidationProvider rules="required" v-slot="{ errors }">
+										<input type="text" placeholder="Subject" v-model="form.subject">
+										<span>{{errors[0]}}</span>
+									</ValidationProvider>
+									<ValidationProvider rules="required" v-slot="{ errors }">
+										<textarea placeholder="Message" name="message" v-model="form.message"></textarea>
+										<span>{{errors[0]}}</span>
+									</ValidationProvider>
+									<div class="row">
+										<input type="submit" class="site-btn" value="Send Message" />
+									</div>
+								</div>
 							</div>
-							<div class="col-md-6">
-								<input type="text" placeholder="Your e-mail" v-model="form.email">
-							</div>
-							<div class="col-md-12">
-								<input type="text" placeholder="Subject" v-model="form.subject">
-								<textarea placeholder="Message" name="message" v-model="form.message"></textarea>
-								<input type="submit" class="site-btn" value="Send Message" />
-							</div>
-						</div>
-					</form>
+						</form>
+					</ValidationObserver>
 				</div>
 			</div>
 		</div>
@@ -70,7 +86,7 @@ import emailjs from 'emailjs-com';
 export default {
     name: 'Contact',
     components: {
-        SectionHeader
+		SectionHeader,
     },
     data() {
         let isBaseball = this.$store.state.baseball; 
