@@ -43,23 +43,23 @@
 								<div class="col-md-6">
 									<ValidationProvider rules="required" v-slot="{ errors }">
 										<input type="text" placeholder="Your name" v-model="form.name">
-										<span>{{errors[0]}}</span>
+										<span class="text-danger">{{errors[0]}}</span>
 									</ValidationProvider>
 								</div>
 								<div class="col-md-6">									
 									<ValidationProvider rules="required|email" v-slot="{ errors }">
 										<input type="text" placeholder="Your e-mail" v-model="form.email">
-										<span>{{errors[0]}}</span>
+										<span class="text-danger">{{errors[0]}}</span>
 									</ValidationProvider>
 								</div>
 								<div class="col-md-12">
 									<ValidationProvider rules="required" v-slot="{ errors }">
 										<input type="text" placeholder="Subject" v-model="form.subject">
-										<span>{{errors[0]}}</span>
+										<span class="text-danger">{{errors[0]}}</span>
 									</ValidationProvider>
 									<ValidationProvider rules="required" v-slot="{ errors }">
 										<textarea placeholder="Message" name="message" v-model="form.message"></textarea>
-										<span>{{errors[0]}}</span>
+										<span class="text-danger">{{errors[0]}}</span>
 									</ValidationProvider>
 									<div class="row">
 										<input type="submit" class="site-btn" value="Send Message" />
