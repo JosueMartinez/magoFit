@@ -2,7 +2,7 @@
     <div>
         <header class="header-section">
 		<a href="home.html" class="site-logo">
-			<img src="assets/logo.png" alt="">
+			<img src="@/assets/img/logo-small.jpg" alt="">
 		</a>
 		<ul class="main-menu">
 			<li v-for="(item, index) in linkEntries" :key="index">

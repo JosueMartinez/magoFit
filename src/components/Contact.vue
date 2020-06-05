@@ -95,8 +95,8 @@ export default {
         return {
             headerText: 'Contact',
             baseballData: isBaseball,
-            headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-home-2.jpg',
-            headerColor: isBaseball ? 'black' : 'white',
+            headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-contact-top.jpg',
+            headerColor: isBaseball ? 'black' : 'black',
 			contacts: constants.contacts,
 			emailService: constants.emailService,
 			form: {

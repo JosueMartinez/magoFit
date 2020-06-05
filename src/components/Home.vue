@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Section Header -->
-        <SectionHeader v-if="baseballData" :text="headerText" :image="headerImage" />
+        <SectionHeader v-if="baseballData" :text="headerText" :image="headerImage" :color="color" />
         <BigSectionHeader v-if="!baseballData" :text="headerText" :image="headerImage" />        
         <!-- Section Header End -->
 
@@ -157,6 +157,7 @@ export default {
             baseballData: isBaseball,
             headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-home-2.jpg',
             headerText: isBaseball ? "Practice with Purpose.  Play With Passion." : "Don’t be afraid of being a beginner",
+            color: 'black',
             baseballProgram: [
                 {Title: "Minor Athletics Classes", Description: "Specifically designed for athletes under 7 years of age. These classes teach confidence and the fundamentals of baseball." },
                 {Title: "Youth Baseball Classes", Description: "Designed for the athletes that are 12 years and older that want to level their game up for the future, while having fun." },
