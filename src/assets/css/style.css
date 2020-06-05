@@ -888,6 +888,10 @@ Other Pages
 About Page
  ---------------------*/
 
+ section {
+	 padding: 40px;
+ }
+
 .about-section {
 	padding: 121px 0 118px;
 }
