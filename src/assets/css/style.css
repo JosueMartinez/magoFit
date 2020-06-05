@@ -1289,7 +1289,7 @@ Contact page
 }
 
 .contact-info-warp .contact-info .cf-text {
-	max-width: 145px;
+	/* max-width: 145px; */
 	overflow: hidden;
 }
 

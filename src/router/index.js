@@ -48,6 +48,11 @@ const Routes = [
                 name: 'Results', 
                 component: () => import ("@/components/Results")
             },
+            { 
+                path: '/contact', 
+                name: 'Contact', 
+                component: () => import ("@/components/Contact")
+            },
         ]
     }
     
