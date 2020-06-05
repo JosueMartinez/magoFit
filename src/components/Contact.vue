@@ -37,7 +37,7 @@
 				</div>
 				<div class="col-lg-8">
 					<h2 class="contact-title">Get in touch</h2>
-					<ValidationObserver v-slot="{ handleSubmit }">
+					<ValidationObserver v-slot="{ handleSubmit }" ref="form">
 						<form class="contact-form" @submit.prevent="handleSubmit(sendMail)">
 							<div class="row">
 								<div class="col-md-6">
@@ -82,6 +82,7 @@
 import SectionHeader from './Utils/TopSectionHeader'
 import constants from '../Utils/Constants'
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2'
 
 export default {
     name: 'Contact',
@@ -108,13 +109,37 @@ export default {
 	},
 	methods: {
 		sendMail() {
-			console.log(this.form);
+
 			emailjs.send(this.emailService.serviceId, this.emailService.templateId, this.form , this.emailService.userId)
-				.then((result) => {
-					console.log('SUCCESS!', result.status, result.text);
-				}, (error) => {
-					console.log('FAILED...', error);
+				.then(() => {
+					Swal.fire({
+						title: 'Success!',
+						text: 'Your e-mail has been sent',
+						icon: 'success',  // 'success' 
+						toast: true,
+						timer: 2000,
+						position: 'top-end',
+						showConfirmButton: false
+						})
+
+						this.clearForm();
+				}, () => {
+					Swal.fire({
+						title: 'Error!',
+						text: 'Please try again later',
+						icon: 'error',
+						toast: true,
+						timer: 2000,
+						position: 'top-end',
+						showConfirmButton: false
+						})
 				});			
+		},
+		clearForm() {
+			this.$nextTick(() => {
+				this.form = {};
+				this.$refs.form.reset();
+				});
 		}
 	},
 }
