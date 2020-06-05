@@ -43,7 +43,7 @@ export default {
         let isBaseball = this.$store.state.baseball; 
 
         return {
-            headerText: isBaseball ? 'Testimonials' : 'Results',
+            headerText: 'Results',
             baseballData: isBaseball,
             headerImage: isBaseball ? 'bb-results-top.jpg' : 'fitness-results-top.jpg',
             headerColor: isBaseball ? 'white' : 'white',
