@@ -43,10 +43,10 @@ export default {
         let isBaseball = this.$store.state.baseball; 
 
         return {
-            headerText: isBaseball ? 'Testimonials' : 'Results',
+            headerText: 'Results',
             baseballData: isBaseball,
-            headerImage: isBaseball ? 'bb-home-top.jpg' : 'fitness-home-2.jpg',
-            headerColor: isBaseball ? 'black' : 'white',
+            headerImage: isBaseball ? 'bb-results-top.jpg' : 'fitness-results-top.jpg',
+            headerColor: isBaseball ? 'white' : 'white',
             baseballTestimonials : [
                 {
                     body: 'Coach Francisco  is an awesome coach. When my 6 year old son started baseball he needed a lot of help. We found Ed through a friend and started taking lessons. He taught my son so much about baseball and helped him with hitting and catching, but most importantly he helped him gain the confidence that he was lacking in baseball. He is a dedicated coach that truly wants to help players improve on and off the field. I highly recommend him.',

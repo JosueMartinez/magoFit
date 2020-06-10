@@ -6,12 +6,12 @@
 
 <script>
 // <!--====== Javascripts & Jquery ======-->
-	import '../node_modules/jquery/src/jquery';
-	import './assets/js/bootstrap.min.js';
-	import './assets/js/jquery.slicknav.js';
-	import './assets/js/owl.carousel.min.js';
-	import './assets/js/circle-progress.min.js';
-	import './assets/js/main.js';
+	// import '../node_modules/jquery/src/jquery';
+	// import './assets/js/bootstrap.min.js';
+	// import './assets/js/jquery.slicknav.js';
+	// import './assets/js/owl.carousel.min.js';
+	// import './assets/js/circle-progress.min.js';
+	// import './assets/js/main.js';
   
 
 export default {
