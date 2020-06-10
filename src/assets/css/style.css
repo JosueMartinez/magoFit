@@ -874,7 +874,7 @@ Other Pages
 	padding-bottom: 17px;
 }
 
-.page-top-section h2:after {
+/* .page-top-section h2:after {
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -882,7 +882,7 @@ Other Pages
 	bottom: 0;
 	left: 0;
 	background: #353535;
-}
+} */
 
 /* ----------------
 About Page

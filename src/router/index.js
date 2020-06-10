@@ -58,6 +58,11 @@ const Routes = [
     
 ];
 
-const router = new Router({routes: Routes});
+const router = new Router({routes: Routes, 
+    scrollBehavior () {
+        return { x:0, y:0 }
+    }
+    
+});
 
 export default router;

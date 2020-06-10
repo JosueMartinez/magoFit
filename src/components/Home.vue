@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="text-center pt-4">
-                    <a href="#" class="site-btn">Contact Us</a>
+                    <router-link :to="'contact'" class="site-btn">Contact Us</router-link>
                 </div>
             </div>
         </section>
@@ -76,7 +76,7 @@
                             <ul>
                                 <li v-for="(item,index) in fitnessGoals" :key="index"><font-awesome-icon :icon="['fas', 'check-circle']" size="1x" /> {{item}}</li>
                             </ul>
-                            <a href="#" class="site-btn">Send Us a Message</a>
+                            <router-link :to="'contact'" class="site-btn">Send Us a Message</router-link>
                         </div>
                     </div>
                 </div>
