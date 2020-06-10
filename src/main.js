@@ -36,6 +36,9 @@ import { required, email } from 'vee-validate/dist/rules';
 
 // Font Awesome END
 
+import { vsNavbar } from 'vuesax'
+import 'vuesax/dist/vuesax.css'
+
 
 library.add(
   faUserSecret, 
@@ -64,6 +67,8 @@ Vue.config.productionTip = false
 
 Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationProvider', ValidationProvider);
+
+Vue.use(vsNavbar)
 
 // No message specified.
 extend('email', {

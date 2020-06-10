@@ -23,4 +23,9 @@ export default {
     /* h2{
         color: black
     } */
+
+    .page-top-section{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 </style>
