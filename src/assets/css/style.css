@@ -502,12 +502,12 @@ Header section
 	float: right;
 }
 
-.main-menu li {
+.main-menu .vs-con-items li {
 	display: inline-block;
 	padding-top: 33px;
 }
 
-.main-menu li a {
+.vs-con-items li a {
 	font-size: 20px;
 	font-weight: 700;
 	color: #353535;
@@ -517,9 +517,9 @@ Header section
 	transition: all 0.3s;
 }
 
-.main-menu li a.active,
-.main-menu li a.router-link-active,
-.main-menu li a:hover {
+.vs-con-items li a.active,
+.vs-con-items li a.router-link-active,
+.vs-con-items li a:hover {
 	background:black;
 	color: white;
 }
