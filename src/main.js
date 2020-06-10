@@ -31,14 +31,6 @@ import { faInstagram,
          faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { ValidationObserver, ValidationProvider, extend } from 'vee-validate';
-import { required, email } from 'vee-validate/dist/rules';
-
-// Font Awesome END
-
-import { vsNavbar } from 'vuesax'
-import 'vuesax/dist/vuesax.css'
-
 
 library.add(
   faUserSecret, 
@@ -61,6 +53,16 @@ library.add(
   faFire
 )
 
+// Font Awesome END
+
+import { ValidationObserver, ValidationProvider, extend } from 'vee-validate';
+import { required, email } from 'vee-validate/dist/rules';
+import { vsNavbar } from 'vuesax'
+import 'vuesax/dist/vuesax.css'
+
+
+
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
@@ -69,6 +71,9 @@ Vue.component('ValidationObserver', ValidationObserver);
 Vue.component('ValidationProvider', ValidationProvider);
 
 Vue.use(vsNavbar)
+
+import VueMobileDetection from "vue-mobile-detection";
+Vue.use(VueMobileDetection);
 
 // No message specified.
 extend('email', {

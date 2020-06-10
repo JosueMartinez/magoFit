@@ -1,9 +1,9 @@
 <template>
     <div>
-		<vs-navbar v-model="activeItem" class="nabarx header-section">
+		<vs-navbar v-model="activeItem" class="nabarx header-section" ref="menuTop">
 			<div slot="title">
 				<vs-navbar-title>
-					<router-link to="/home" class="site-logo">
+					<router-link to="/" class="site-logo">
 						<img src="@/assets/img/logo-small.jpg" alt="">
 					</router-link>
 				</vs-navbar-title>
@@ -41,5 +41,13 @@ export default {
 			activeItem: 0
 		}
 	},
+	watch: {
+		$route() {
+		const button = this.$refs.menuTop.$el.querySelector(
+			".vs-navbar--btn-responsive"
+		);
+		button.click();    
+		}
+	}
 }
 </script>
